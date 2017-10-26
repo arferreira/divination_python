@@ -38,3 +38,22 @@ def verify(kick, number_secret):
             print("O número secreto é menor!")
         return False
 
+welcome()
+
+number_secret = sort()
+
+i = 1
+
+limit = 10
+
+kicks = []
+
+
+while i <= limit:
+    kick = get_number(kicks, i, limit)
+    kicks.append(kick)
+    if verify(kick, number_secret):
+        break
+    i += 1
+
+
