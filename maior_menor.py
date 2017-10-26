@@ -25,3 +25,16 @@ def get_number(kicks, attempt, limit):
     print("Será que você acertou?? Você escolheu o número: {}".format(kick))
     return kick
 
+def verify(kick, number_secret):
+    if kick == number_secret:
+        print("Parabéns!!! Você acertou!")
+        return True
+    else:
+        print("Humm.. Você errou!")
+        larger = number_secret > kick
+        if larger:
+            print("O número secreto é maior!")
+        else:
+            print("O número secreto é menor!")
+        return False
+
