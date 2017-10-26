@@ -17,4 +17,11 @@ def sort():
     print("Escolhido ... Que tal adivinhar hoje nosso número secreto?")
     return number_secret
 
+def get_number(kicks, attempt, limit):
+    print("\n\n\n")
+    print("Tentativa {} de {}.".format(attempt, limit))
+    print("Chutes atá agora: {}".format(kicks))
+    kick = int(input("Escolha um número: "))
+    print("Será que você acertou?? Você escolheu o número: {}".format(kick))
+    return kick
 
